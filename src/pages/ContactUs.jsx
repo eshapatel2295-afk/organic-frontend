@@ -20,7 +20,7 @@ const ContactUsPage = () => {
         e.preventDefault();
 
         try {
-            const res = await axios.post("http://localhost:5000/api/contact", form);
+            const res = await axios.post("https://organic-backend-r7th.onrender.com/api/contact", form);
 
             setStatus("Message sent successfully!");
             setForm({ name: "", email: "", subject: "", message: "" });

@@ -32,7 +32,7 @@ export const AuthProvider = ({ children }) => {
   // Login function
   const login = async (email, password) => {
     try {
-      const res = await axios.post("http://localhost:5000/api/auth/login", { email, password });
+      const res = await axios.post("https://organic-backend-r7th.onrender.com/api/auth/login", { email, password });
 
       if (!res.data || !res.data.user || !res.data.token) {
         throw new Error("Invalid server response");

@@ -27,7 +27,7 @@ const Signup = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:5000/api/auth/register",
+        "https://organic-backend-r7th.onrender.com/api/auth/register",
         formData
       );
 

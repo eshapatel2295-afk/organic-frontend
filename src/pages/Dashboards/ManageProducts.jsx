@@ -50,7 +50,7 @@ export default function ManageProducts() {
             <tr key={p._id}>
               <td>
                 <img
-                  src={p.image ? `http://localhost:5000/uploads/${p.image}` : "https://via.placeholder.com/60"}
+                  src={p.image ? `https://organic-backend-r7th.onrender.com/uploads/${p.image}` : "https://via.placeholder.com/60"}
                   alt={p.name}
                   width="60"
                   height="60"
